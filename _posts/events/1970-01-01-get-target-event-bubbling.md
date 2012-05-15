@@ -22,6 +22,7 @@ el.onclick = function( e ) {
 };
 {% endhighlight %}
 
-'q' n'est pas reconnu en tant que commande interne
-ou externe, un programme excutable ou un fichier de commandes.
+As shown in [this hack][1], IE must get the event through `window.event`. Also, the target is not available through `evt.target`, but through `evt.srcElement`.
+
+[1]: http://margaine.com/iehacks/events/capture-ie-events/
 
